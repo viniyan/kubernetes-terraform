@@ -1,0 +1,76 @@
+{
+  "version": 4,
+  "terraform_version": "1.1.7",
+  "serial": 1,
+  "lineage": "8f886284-3087-f5eb-5735-2fe5420d1cab",
+  "outputs": {},
+  "resources": [
+    {
+      "mode": "data",
+      "type": "digitalocean_ssh_key",
+      "name": "teste",
+      "provider": "provider[\"registry.terraform.io/digitalocean/digitalocean\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "fingerprint": "f5:99:fe:47:68:a8:a5:ba:10:3d:c2:23:3d:72:d4:c4",
+            "id": 33767614,
+            "name": "teste",
+            "public_key": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC8aQJt01WSlqeb8AsVg9KU3uPAYoiRAwt7Gmd0u8xZ/D45GR449w/ykzVQUX/eyyN4K/r71vwflIxcT0uV3i+4hFyGogQc0xC5s8jD/zqHB5cypzFNiP6rDIVvoiFUtSM/s34eoW+4xfNt9sNJ9ozkC/CsLQri9N6t8d6zusBugaH23MkEF5trcex3FSdjinPzLZCGuGarAZ4rbwawSKAIV+eSoAmT2dqAzY7AClI5fKtMs6OBoDhcwfbzzhbjMyB3pZpVrA4PTD/kbzi1jibLMneMy8NhdUE7OHVBSimoZd/kMIRRy2gUerTS+bkZyLXWgqm/GuojbB2z6rukPgAF2OUqx/aZl9Msqcc1cg0HoTEzzvlu+YqDKk4TtGT86lJZthEYFnbWsB/2I1Lg0ATyeCHxUZcz1ATmTE1cDJavfNE/KjWeUso6C+qMS+oXSpauOojMtdq5j1EOIpiX/snlik0gVrOEHNU5dFcSb/1dBheouam54SiFQXkBUda1FXc= vinicious@vinicious-HP-Pavilion-14-Notebook-PC"
+          },
+          "sensitive_attributes": []
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "digitalocean_droplet",
+      "name": "ubuntu-s-1vcpu-1gb-ams3-01",
+      "provider": "provider[\"registry.terraform.io/digitalocean/digitalocean\"]",
+      "instances": [
+        {
+          "schema_version": 1,
+          "attributes": {
+            "backups": false,
+            "created_at": "2022-03-25T10:25:09Z",
+            "disk": 25,
+            "droplet_agent": null,
+            "graceful_shutdown": false,
+            "id": "292237434",
+            "image": "ubuntu-20-04-x64",
+            "ipv4_address": "143.198.24.3",
+            "ipv4_address_private": "10.108.0.2",
+            "ipv6": false,
+            "ipv6_address": "",
+            "locked": false,
+            "memory": 1024,
+            "monitoring": false,
+            "name": "ubuntu-s-1vcpu-1gb-ams3-01",
+            "price_hourly": 0.00744,
+            "price_monthly": 5,
+            "private_networking": true,
+            "region": "nyc3",
+            "resize_disk": true,
+            "size": "s-1vcpu-1gb",
+            "ssh_keys": [
+              "33767614"
+            ],
+            "status": "active",
+            "tags": null,
+            "urn": "do:droplet:292237434",
+            "user_data": null,
+            "vcpus": 1,
+            "volume_ids": [],
+            "vpc_uuid": "a31d471f-47b4-49e5-8d57-086c1f88591c"
+          },
+          "sensitive_attributes": [],
+          "private": "eyJzY2hlbWFfdmVyc2lvbiI6IjEifQ==",
+          "dependencies": [
+            "data.digitalocean_ssh_key.teste"
+          ]
+        }
+      ]
+    }
+  ]
+}
